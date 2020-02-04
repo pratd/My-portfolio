@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <script language="javascript" src="js/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script language="javascript" src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <% if(message.length > 0 ) { %>
+            <div class="alert alert-danger"><%= message %></div>
+        <% }%>
+        <div class="container-fluid h-100">
+            <div class="row justify-content-center h-100">
+                <div class=" fontuse col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="row">
+                        <div class="col py-5">
+                            <h2 class="fontuse fontsizeverybig fontsizeheavy text-center">Welcome</h2>
+                            <form class="py-5" action ="/addUser" method="POST">
+                                <div class="form-group row">
+                                    <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="Name" class="form-control" id="inputName3" placeholder="Name" 
+                                        name="name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputUsername3" class="col-sm-2 col-form-label">User Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="username" class="form-control" id="inputUserName3" placeholder="username" 
+                                        name="username" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password" 
+                                        name="password" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary my-5 dropbtn text-center">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-3">
+                            <a href="/Login">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

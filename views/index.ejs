@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script language="javascript" src="js/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script language="javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form action ="/login" method="POST">
+            <input type="submit" class="butn1" value="login">
+          </form>
+        </div>
+        <div class="col">
+          <form action ="/guest" method="POST">
+            <input type="submit" class="butn1" value="guest">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
